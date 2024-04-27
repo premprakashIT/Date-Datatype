@@ -1,8 +1,12 @@
 <script>
-    let mfd = new Date("2021-08-15");
+    let mfd = new Date("2024-04-27");
+    let month=["Jan","Feb","March","April","May","June","July","Agust","Sep","Oct","NOv","Dec"];
+    let day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satarday"];
     document.write(`
+    Manufactured Day : ${day[mfd.getDay()]}<br>
     Manufactured Date : ${mfd.getDate()}<br>
-    Manufactured Month : ${mfd.getMonth()}<br>
-    Manufactured Day : ${mfd.getDay()}
+    Manufactured Month : ${month[mfd.getMonth()]}<br>
+    Manufactured Year : ${mfd.getFullYear()}<br>
+    Manufactured Date : ${day[mfd.getDay()]}, ${mfd.getDate()} ${month[mfd.getMonth()]} ${mfd.getFullYear()}
 `);
 </script>
